@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import de.jl.notificationlog.R
+import de.jl.notificationlog.overlay.OverlayService
 import de.jl.notificationlog.ui.about.AboutActivity
 import de.jl.notificationlog.ui.appdetail.AppDetailActivity
 import de.jl.notificationlog.ui.appdetail.AppDetailFragment
@@ -35,6 +36,8 @@ class AppListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_app_list)
+
+        startService(Intent(this, OverlayService::class.java))
 
         setSupportActionBar(toolbar)
 

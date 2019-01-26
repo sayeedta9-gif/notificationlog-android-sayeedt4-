@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="de.jl.notificationlog">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -62,6 +64,9 @@
             android:exported="false"
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".overlay.OverlayService"
+            android:exported="false" />
     </application>
 
 </manifest>
