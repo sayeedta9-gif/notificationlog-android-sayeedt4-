@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <!-- title of the app -->
+    <string name="app_name" translatable="false">NotificationLog</string>
+
+    <!-- title for the app list (single pane mode) -->
+    <string name="title_app_list">التطبيقات</string>
+
+    <!-- description for clear history action -->
+    <string name="action_clear">مسح السجل</string>
+
+    <!-- dialog: clear history -->
+    <string name="dialog_clear_all_title">مسح سجل كل التطبيقات؟</string>
+    <string name="dialog_clear_app_title">مسح سجل <xliff:g example="GMail" id="app">%1$s</xliff:g>؟</string>
+    <string name="dialog_clear_text">لا يمكن التراجع عن هذا الإجراء</string>
+    <string name="dialog_clear_positive">مسح</string>
+    <string name="dialog_clear_negative">إلغاء</string>
+
+    <!-- text if there aren't any notifications saved -->
+    <string name="notification_list_empty">لا توجد أي إشعارات محفوظة بعد</string>
+
+    <!-- card which says how to enable the notification logging -->
+    <string name="card_enable_service_title">الصلاحية مطلوبة</string>
+    <string name="card_enable_service_text">
+        يحتاج NotificationLog صلاحيتك للوصول إلى إشعاراتك وحفظها.
+        تُحفظ البيانات في جهازك فقط ولا تُرسل إلى أي مكان.
+    </string>
+    <string name="card_enable_service_button">سماح</string>
+
+    <!-- accessibility service dialog -->
+    <string name="dialog_accessibility_service_title">خدمة إمكانية الوصول</string>
+    <string name="dialog_accessibility_service_text">كان NotificationLog
+        سيستخدم صلاحية الوصول إلى الإشعارات لو كان جهازك يدعمها،
+        لكن جهازك لا يدعمها. لذلك يمكن لـ NotificationLog استخدام
+        صلاحية خدمة إمكانية الوصول بدلًا منها. يستخدمها فقط لقراءة
+        الإشعارات وحفظها - حسب إعداداتك - في جهازك.
+    </string>
+    <string name="dialog_accessibility_service_yes">منح الصلاحية</string>
+    <string name="dialog_accessibility_service_no">إلغاء</string>
+
+    <!-- card which informs that logging was disabled for one App -->
+    <string name="card_logging_disabled_title">تم إيقاف التسجيل لـ %s</string>
+    <string name="card_logging_disabled_text">تقدر تغيّر هذا من القائمة</string>
+
+    <!-- special app entry which merges the data of all apps -->
+    <string name="merge_all_apps">كل التطبيقات</string>
+
+    <!-- title for the about dialog -->
+    <string name="title_activity_about">حول التطبيق</string>
+    <string name="about_license">الرخصة</string>
+    <string name="about_version">الإصدار %s</string>
+    <string name="about_source_title">الكود المصدري</string>
+    <string name="about_source_text" translatable="false"><a href="https://codeberg.org/jonas-l/notificationlog-android">https://codeberg.org/jonas-l/notificationlog-android</a></string>
+    <string name="about_developer_key_title">بصمة مفتاح PGP الخاص بالمطوّر</string>
+    <string name="about_developer_key_text" translatable="false">2E5C 672D E893 055D 04F5 B7BC 36B4 49FB 5364 BDC4</string>
+    <string name="about_libraries">البرمجيات المُضمّنة</string>
+
+    <string name="action_export">تصدير</string>
+    <string name="export_done">اكتمل التصدير</string>
+    <string name="export_error">فشل التصدير</string>
+
+    <string name="action_checkbox_enable_logging">تسجيل %s</string>
+
+    <!-- settings screen -->
+    <string name="title_activity_settings">إعدادات الفلترة</string>
+    <string name="settings_radio_blacklist">سجّل كل التطبيقات ما عدا المحددة</string>
+    <string name="settings_radio_whitelist">سجّل التطبيقات التالية فقط</string>
+    <string name="settings_search_hint">ابحث عن تطبيقات</string>
+
+    <!-- sorting -->
+    <string name="sorting_apps_title">ترتيب التطبيقات</string>
+    <string name="sorting_notifications_title">ترتيب الإشعارات</string>
+    <string name="sort_alphabetically">أبجديًا</string>
+    <string name="sort_oldest_first">الأقدم أولًا</string>
+    <string name="sort_newest_first">الأحدث أولًا</string>
+
+    <string name="version_handling_title">تحديثات الإشعار</string>
+    <string name="version_handling_all">عرض كل النسخ</string>
+    <string name="version_handling_oldest">عرض أقدم نسخة</string>
+    <string name="version_handling_newest">عرض أحدث نسخة</string>
+
+    <!-- opening notifications -->
+    <string name="open_notification_action_expired">هذا الإجراء لم يعد متاحًا</string>
+    <string name="open_notification_info_title">فتح الإشعارات</string>
+    <string name="open_notification_info_text">لا يمكن حفظ إجراء الإشعار بشكل موثوق. يعمل فقط مع الإشعارات الحديثة، وحتى في هذه الحالة ليس دائمًا.</string>
+    <string name="open_notification_info_positive">موافق</string>
+    <string name="open_notification_info_negative">رفض</string>
+
+    <!-- deleting old notifications -->
+    <string name="delete_old_notifications_title">حذف الإشعارات القديمة تلقائيًا</string>
+    <string name="delete_old_notifications_never">أبدًا</string>
+    <plurals name="delete_old_notifications_days">
+        <item quantity="zero">بعد صفر أيام</item>
+        <item quantity="one">بعد يوم واحد</item>
+        <item quantity="two">بعد يومين</item>
+        <item quantity="few">بعد %d أيام</item>
+        <item quantity="many">بعد %d يومًا</item>
+        <item quantity="other">بعد %d يوم</item>
+    </plurals>
+
+    <!-- copy to clipboard -->
+    <string name="copy_to_clipboard_toast">تم النسخ إلى الحافظة</string>
+
+    <!-- deduplication -->
+    <string name="action_hide_duplicates">إخفاء المكررات</string>
+    <!-- authentication -->
+    <string name="auth_option">طلب المصادقة</string>
+    <string name="auth_message">سجّل الدخول لعرض الإشعارات</string>
+</resources>
